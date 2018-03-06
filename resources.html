@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <head>
   <title>Quitting Plastic</title>
-    <style>
-      body {background-size: cover;}
-    </style>
   <link href='css/bootstrap.min.css' rel='stylesheet'>
+  <link href='styles.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/css">
+<!--not sure why it is not working - have also tried with urls and still the same-->
+  .about {
+    background-image: url("images/neonbrand-580130-unsplash-resized.jpg");
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+
+  .resources {
+    background-image: url("images/william-felker-38344-unsplash-resized.jpg");
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+
+  .blog{
+    background-image: url("images/paul-morris-171434-unsplash-resized.jpg");
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+
+  </script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
 </head>
+
 <body>
-<h1>Resources</h1>
 <!--nav attempt-->
   <nav>
     <a href="index.html">HOME</a><!--should replace with logo that goes to home - better ux-->
@@ -18,7 +46,28 @@
     <a href="resources.html">RESOURCES</a>
     <a href="blog.html">BLOG</a>
   </nav>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+
+  <h1>Quitting Plastic</h1>
+
+  <div>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <!--attempt to create series of images to link to pages to see how that looks-->
+
+  <div class="about">
+    <p>About</p>
+    <!--Photo of plastic bottles by NeONBRAND on Unsplash-->
+  </div>
+
+  <div class="resources">
+    <p>Resources</p>
+    <!--Photo of berries by William Felker on Unsplash-->
+  </div>
+
+  <div class="blog">
+    <p>Blog</p>
+    <!--Photo of flamingos by paul morris on Unsplash -->
+  </div>
 </body>
