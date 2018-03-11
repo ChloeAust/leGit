@@ -43,27 +43,27 @@ div.footer {
 
 /*resources page listing*/
 
-.about {
-  background-image: url("https://images.unsplash.com/photo-1506201803590-8586d5a760e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e81003abcf3595a33ac2fb499c316a8b&auto=format&fit=crop&w=750&q=80");
-  height: 200px;
+.videos {
+  background-image: url("../images/ant-rozetsky-153554-unsplash-resized.jpg");
+  height: 300px;
   background-size: cover;
-  position: relative;
+  position: center;
   margin: 40px 0 0 0;
   border-radius: 12px;
   }
 
-.resources {
-  background-image: url("https://images.unsplash.com/photo-1506201803590-8586d5a760e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e81003abcf3595a33ac2fb499c316a8b&auto=format&fit=crop&w=750&q=80");
-  height: 200px;
+.alternatives {
+  background-image: url("../images/ja-ma-216495-unsplash-resized.jpg");
+  height: 300px;
   background-size: cover;
   position: relative;
   margin: 40px 0 0 0;
   border-radius: 12px;
 }
 
-.blog{
-  background-image: url("https://images.unsplash.com/photo-1506201803590-8586d5a760e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e81003abcf3595a33ac2fb499c316a8b&auto=format&fit=crop&w=750&q=80");
-  height: 200px;
+.petition {
+  background-image: url("../images/alvaro-serrano-133360-unsplash-resized.jpg");
+  height: 300px;
   background-size: cover;
   position: relative;
   margin: 40px 0 0 0;

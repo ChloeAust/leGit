@@ -7,6 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
+<!-- was hoping the below would make the images also hyperlinked but currently not working-->
+  <script type="text/javascript">
+    $('.videos').each(function() {
+      var link = $(this).html();
+      $(this).contents().wrap('<a href="https://www.youtube.com/results?search_query=Plastic+Pollution" target="blank"></a>');
+    });
+    $('.alternatives').each(function() {
+      var link = $(this).html();
+      $(this).contents().wrap('<a href="https://www.ethicalsuperstore.com/" target="blank"></a>');
+    });
+    $('.petition').each(function() {
+      var link = $(this).html();
+      $(this).contents().wrap('<a href="https://petition.parliament.uk/petitions/200189" target="blank"></a>');
+    });
+  </script>
 
 </head>
 
@@ -23,24 +38,24 @@
 
   <div>
     <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Reducing your plastic use can be a challenge but there are resources out there to support you. Here are some of our favourites to get you going on your journey.
     </p>
   </div>
   <!--attempt to create series of images to link to pages to see how that looks-->
 
-  <div class="about">
-    <p>About</p>
-    <!--Photo of plastic bottles by NeONBRAND on Unsplash-->
+  <div class="videos">
+    <p><a href="https://www.youtube.com/results?search_query=Plastic+Pollution" target="blank">Useful Videos</a></p>
+    <!--Photo of ocean by Ant Rozetsky on Unsplash-->
   </div>
 
-  <div class="resources">
-    <p>Resources</p>
-    <!--Photo of berries by William Felker on Unsplash-->
+  <div class="alternatives">
+    <p><a href="https://www.ethicalsuperstore.com/" target="blank">Ethical Superstore</a></p>
+    <!--Photo of fruit and veg by ja ma on Unsplash-->
   </div>
 
-  <div class="blog">
-    <p>Blog</p>
-    <!--Photo of flamingos by paul morris on Unsplash -->
+  <div class="petition">
+    <p><a href="https://petition.parliament.uk/petitions/200189">Sign the Petition</a></p>
+    <!--Photo of pen by Álvaro Serrano on Unsplash-->
   </div>
   <div class="footer">
     <p> © Quitting Plastic 2018</p>
