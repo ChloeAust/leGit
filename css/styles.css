@@ -50,7 +50,13 @@ div.footer {
   position: center;
   margin: 40px 0 0 0;
   border-radius: 12px;
-  }
+  font-family: 'Londrina Shadow';
+  text-align: center;
+  font-size: 75px;
+  margin: 60px 0 0 0;
+  color: #000066;
+}
+
 
 .alternatives {
   background-image: url("../images/ja-ma-216495-unsplash-resized.jpg");
@@ -59,6 +65,11 @@ div.footer {
   position: relative;
   margin: 40px 0 0 0;
   border-radius: 12px;
+  font-family: 'Londrina Shadow';
+  text-align: center;
+  font-size: 75px;
+  margin: 60px 0 0 0;
+  color: #000066;
 }
 
 .petition {
@@ -68,4 +79,9 @@ div.footer {
   position: relative;
   margin: 40px 0 0 0;
   border-radius: 12px;
+  font-family: 'Londrina Shadow';
+  text-align: center;
+  font-size: 75px;
+  margin: 60px 0 0 0;
+  color: #000066;
 }
