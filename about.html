@@ -9,6 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+function conf()
+{
+var con=confirm("Thank you! Someone will be in touch soon!");
+}
+</script>
 </head>
 <body>
   <a href="index.html"><h1>Quitting Plastic</h1></a>
@@ -32,7 +38,7 @@
       <label for="exampleInputEmail1">Enquiry</label>
       <textarea class="form-control" rows="3" id="exampleInputQuery1" placeholder="Your question"></textarea>
       <br>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="btn btn-default" onClick="conf()">Submit</button>
     </div>
   </form>
   <div class="footer">
@@ -41,9 +47,4 @@
       <a href="https://twitter.com" target="blank"><img src="images\social_logos\twitter.png"></img></a>
       <a href="http://instagram.com" target="blank"><img src="images\social_logos\instagram.png"></img></a>
   </div>
-  <script>
-    $("button").on("click", function () {
-    alert("clicked!")
-    })
-  </script>
 </body>
