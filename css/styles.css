@@ -4,14 +4,21 @@ H1 { text-align: center }
 
 nav { text-align: center }
 
-/*footer*/
-.right {
-  text-align: right;
+p {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
-/* this was an attempt to get rid of the bullet point in the footer. Not working so far*/
-li.right {
-  display: inline
+/*footer*/
+
+div.footer {
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: right;
 }
 
 
@@ -24,8 +31,7 @@ li.right {
   position: relative;
   margin: 40px 0 0 0;
   border-radius: 12px;
-  color: red;
-}
+  }
 
 .resources {
   background-image: url("https://images.unsplash.com/photo-1506201803590-8586d5a760e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e81003abcf3595a33ac2fb499c316a8b&auto=format&fit=crop&w=750&q=80");
