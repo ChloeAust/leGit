@@ -1,19 +1,63 @@
 /*site wide*/
 
-H1 { text-align: center }
+H1 {
+  color: white;
+  font-family: 'Nobile', Calibri;
+  font-size: 9vw;
+  text-align: center;
+}
 
 p {
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    font: Calibri;
+    font-size: 12;
+    color: #000000;
+
 }
 
 h2 {
     padding-right: 10px;
     padding-left: 10px;
+    font: Calibri;
+    font-size: 16;
+    color: #000000;
+
 }
 
+/*index quote box below video*/
+
+blockquote {
+  display: block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  font-family: Calibri;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  border-left: 15px solid #16a1bc;
+  border-right: 5px solid #16a1bc;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  content: "";
+}
 
 .form-group {
     padding-top: 10px;
@@ -21,13 +65,183 @@ h2 {
     padding-bottom: 10px;
     padding-left: 10px;
 }
+.align-center {
+   text-align: center;
+}
+
+.content-wrapper {
+   min-height: 100%;
+   position: relative;
+}
+
+.get-in-touch {
+   max-width: 650px;
+   margin: 0 auto;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+.title {
+     text-align: center;
+     font-family: Raleway, sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     font-size: 36px;
+     line-height: 48px;
+     padding-bottom: 48px;
+  }
+}
+
+.contact-form {
+   .form-field {
+      position: relative;
+      margin: 32px 0;
+   }
+   .input-text {
+      display: block;
+      width: 100%;
+      height: 36px;
+      border-width: 0 0 2px 0;
+      border-color: #000;
+      font-family: Lusitana, serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+
+      &:focus {
+         outline: none;
+      }
+
+      &:focus,
+      &.not-empty {
+         + .label {
+            transform: translateY(-24px);
+         }
+      }
+   }
+   .label {
+      position: absolute;
+      left: 20px;
+      bottom: 11px;
+      font-family: Lusitana, serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #888;
+      cursor: text;
+      transition: transform .2s ease-in-out;
+   }
+
+   .submit-btn {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      font-family: Raleway, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+   }
+}
+
+.note {
+   position: absolute;
+   left: 0;
+   bottom: 10px;
+   width: 100%;
+   text-align: center;
+   font-family: Lusitana, serif;
+   font-size: 16px;
+   line-height: 21px;
+}
+   .link {
+      color: #888;
+      text-decoration: none;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
 
 /*nav*/
-.navbar li{list-style:none; display: inline;}
-.navbar li.selected a { color: #6600ff; }
-.navbar { text-align: center }
+.navigation{
+  padding-top:30px;
+  padding-bottom:30px;
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index:1;
+}
 
+.navbar-right {
+  float:right;
+  padding-right:10%;
+}
 
+.navbar-right a{
+  text-decoration:none;
+  padding:10px;
+  color: #fff;
+  font-family:Calibri;
+  font-size: 26px;
+}
+
+.navbar-right a:hover{
+  text-decoration:underline;
+}
+.navbar-logo{
+  padding-left:10%;
+  font-family: Calibri;
+  font-size:42px;
+  font-weight: bold;
+  text-decoration:none;
+  color:#fff;
+}
+.navbar {
+  text-align: center
+}
+
+/*navigation for other pages*/
+
+.navigation2 {
+  padding-top:30px;
+  padding-bottom:30px;
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index:1;
+}
+
+.navbar-right2 {
+  float:right;
+  padding-right:10%;
+}
+
+.navbar-right2 a{
+  text-decoration:none;
+  padding:10px;
+  color: #16a1bc;
+  font-family:Calibri;
+  font-size: 26px;
+}
+
+.navbar-right2 a:hover{
+  text-decoration:underline;
+}
+.navbar-logo2 {
+  padding-left:10%;
+  font-family: Calibri;
+  font-size:42px;
+  font-weight: bold;
+  text-decoration:none;
+  color:#16a1bc;
+}
+.navbar2 {
+  text-align: center
+}
 
 
 /*footer*/
@@ -54,9 +268,19 @@ div.footer {
   text-align: center;
   font-size: 75px;
   margin: 60px 0 0 0;
-  color: #000066;
+  color: #ffffff;
 }
-
+.videos a:hover {
+  text-decoration:underline;
+}
+.videos a:hover {
+padding-left:10%;
+font-family: Calibri;
+font-size:70px;
+font-weight: bold;
+text-decoration:none;
+color:#16a1bc;
+}
 
 .alternatives {
   background-image: url("../images/ja-ma-216495-unsplash-resized.jpg");
@@ -71,6 +295,17 @@ div.footer {
   margin: 60px 0 0 0;
   color: #000066;
 }
+.alternatives a:hover {
+  text-decoration:underline;
+}
+.alternatives a:hover {
+padding-left:10%;
+font-family: Calibri;
+font-size:70px;
+font-weight: bold;
+text-decoration:none;
+color:#16a1bc;
+}
 
 .petition {
   background-image: url("../images/alvaro-serrano-133360-unsplash-resized.jpg");
@@ -83,5 +318,28 @@ div.footer {
   text-align: center;
   font-size: 75px;
   margin: 60px 0 0 0;
-  color: #000066;
+  color: #ffffff;
+}
+.petition a:hover {
+  text-decoration:underline;
+}
+.petition a:hover {
+padding-left:10%;
+font-family: Calibri;
+font-size:70px;
+font-weight: bold;
+text-decoration:none;
+color:#16a1bc;
+}
+
+/*about us page*/
+.Aboutus {
+  background-image: url("");
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+  margin: 60px 0 0 0;
+  color: #ffffff;
 }
