@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <title>Resources</title>
+
+  <link href='css/bootstrap.min.css' rel='stylesheet'>
+  <link href='css/styles.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $('.videos').each(function() {
+      var link = $(this).html();
+      $(this).contents().wrap('<a href="https://www.youtube.com/results?search_query=Plastic+Pollution" target="blank"></a>');
+    });
+    $('.alternatives').each(function() {
+      var link = $(this).html();
+      $(this).contents().wrap('<a href="https://www.ethicalsuperstore.com/" target="blank"></a>');
+    });
+    $('.petition').each(function() {
+      var link = $(this).html();
+      $(this).contents().wrap('<a href="https://petition.parliament.uk/petitions/200189" target="blank"></a>');
+    });
+  </script>
+
+</head>
+
+<body>
+  <header>
+  <div class="header">
+    <nav class="navigation2">
+      <a href="index.html" class="navbar-logo2"> QuittingPlastic </a>
+      <div class="navbar-right2">
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+<!--
+      </div>
+    </nav>
+  -->
+  </div>
+  <!--
+  </header>
+-->
+    <div>
+      <p>
+      Reducing your plastic use can be a challenge but there are resources out there to support you. Here are some of our favourites to get you going on your journey.
+      </p>
+    </div>
+
+    <div class="videos">
+      <p><a href="https://www.youtube.com/results?search_query=Plastic+Pollution" target="blank">Useful Videos</a></p>
+      <!--Photo of ocean by Ant Rozetsky on Unsplash-->
+    </div>
+
+    <div class="alternatives">
+      <p><a href="https://www.ethicalsuperstore.com/" target="blank">Ethical Superstore</a></p>
+      <!--Photo of fruit and veg by ja ma on Unsplash-->
+    </div>
+
+    <div class="petition">
+      <p><a href="https://petition.parliament.uk/petitions/200189">Sign the Petition</a></p>
+      <!--Photo of pen by Álvaro Serrano on Unsplash-->
+    </div>
+
+    <div class="footer">
+      <p> © Quitting Plastic 2018</p>
+        <a href="https://www.facebook.com" target="blank"><img src="images\social_logos\facebook.png"></img></a>
+        <a href="https://twitter.com" target="blank"><img src="images\social_logos\twitter.png"></img></a>
+        <a href="http://instagram.com" target="blank"><img src="images\social_logos\instagram.png"></img></a>
+    </div>
+</body>
